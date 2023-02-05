@@ -1,0 +1,110 @@
+.console {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 600px;
+    height: 400px;
+
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.091);
+    box-shadow: 0 8px 32px 0 rgba(135, 136, 155, 0.158);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+
+
+    .console-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        height: 35px;
+
+        position: relative;
+
+        background: rgba(255, 255, 255, 0.091);
+        box-shadow: 0 8px 32px 0 rgba(135, 136, 155, 0.158);
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+        border-radius: 10px 10px 0 0;
+        border: 1px solid rgba(255, 255, 255, 0.255);
+
+        .btn {
+            margin: 5px;
+            width: 25px;
+            height: 25px;
+
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+
+            background: rgba(255, 255, 255, 0.02);
+            box-shadow: 0 8px 32px 0 rgba(126, 128, 160, 0.327);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: .1em;
+            border: 1px solid rgba(255, 255, 255, 0.871);
+            font-size: 1.1em;
+        }
+    }
+
+    #comands {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        height: 100%;
+
+        .comand-item {
+
+
+            .comand-content {
+
+
+
+                .path {
+                   font-weight: bolder; 
+                   font-size: 15px;
+  
+                }
+
+                .comand {
+                    /* color: #ddd; */
+                }
+            }
+
+            .comand-result {}
+        }
+    }
+
+    [contenteditable] {
+        outline: 0px solid transparent;
+    }
+
+    .cursor {
+        height: 17px;
+        width: 8px;
+        background: white;
+        display: block;
+        margin-left: 8px;
+        animation: 1000ms ease infinite alternate blink;
+    }
+}
+
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
